@@ -1,0 +1,8 @@
+#!/bin/bash
+
+RENGE=$(( $1-1 ))
+for i in `seq 0 $RENGE`
+do 
+    cp -r ./Case ./Case_super_save/Case$i
+    sleep $2
+done
